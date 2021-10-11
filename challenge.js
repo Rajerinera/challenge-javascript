@@ -1,3 +1,44 @@
+//test avec un simple html pour learning linkedin
+document.getElementById('html').innerHTML="Ceci est un \"Titre crée par html\"" // back slash pour mettre des vrais guillemets
+
+let testType = "Jean"
+console.log(typeof(testType))// Permet de reconnaitre le type de donnée c'est un string
+let testType2 = 33
+console.log(typeof(testType2))// Permet de reconnaitre le type de donnée c'est un number
+
+let a = 2 
+let b = 3
+let c = 0
+let result;
+result = (a + b) * c;
+console.log(result) // permet de faire des calculs qui seront attribué dans une variable result
+
+let a2 = 2
+let b2 = "3"
+let result2;
+result2 = a2 + b2
+console.log(result2) // quand il y'a un string (chaine de caractère) le + concatène les données mais ne les additionne pas
+
+let myName = "Adrien"
+let firstname = "Baro"
+let sentence;
+sentence = `Mon nom est ${myName} et 
+mon nom de famille est ${firstname}`
+console.log(sentence) // template string permet de faire des phrases en javascript et concaténation mieux faîtes
+let a3 = 2
+a3++ // +=(valeur), permet d'additionner et a++ permet de rajouter un +1 
+console.log(a3) // valeur après l'opération dans ce cas c'est un +1 de la variable a3
+
+let colors = ["rouge", "noir", "vert", 0 , false] // c'est un array avec des strings un number et un boolean
+//d'ailleurs elle se caractérise par new Array() qui se caractérise par  [];
+console.log(colors)
+console.log(colors[3])
+
+let objet = {nom: "RAJ", prenom: "Adrien", age: 44} // c'est un tableau d'objet qui met en avant des variables au lien d'index
+// et elle se carecterise par new Object et {}
+console.log(objet)
+console.log(objet.prenom) //prenom et une paire clé valeur
+
 //challenge 
 function age() {
     var anniversaire = prompt('Tu es née en quelle année?');
