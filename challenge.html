@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="challenge.css">
+    <title>Challenge Javascript</title>
+
+</head>
+<body>
+    <div class=contenant>
+        <h2>Challenge 1: notre âge dans la journée</h2>
+            <div class="contenant-1">
+                <button class="btn btn-primary" onclick="age()">Appuie le bouton</button>
+                <button class="btn btn-danger" onclick="reset()">Passe à autre chose</button>
+            </div>
+    </div>
+    <div class = contenant-2>
+        <div id="result"></div>
+    </div>
+    <div class="contenant">
+        <h2>Challenge 2: Générateur de livre</h2>
+        <button class="btn btn-success" id="bouton" onclick="genere()">Livre généré</button>
+        <div class="contenant-3" id="generator"></div>
+    </div>
+    <div class= contenant>
+        <h2>Challenge 3: Junken</h2>
+        <div class="contenant-4" id="pfc">
+            <img id="pierre" src="img\rock-clipart-rock.svg" onclick="pfcGame(this)">
+            <img id="papier" src="img\papier.jpg" onclick="pfcGame(this)">
+            <img id="ciseau" src="img\ciseau.jpg" onclick="pfcGame(this)"> 
+        </div>
+    </div>
+    <div class= contenant>
+        <h2 id="change-my-color">Challenge 4: couleur qui change</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="ButtonColorChange(this)">
+                <option value="random">hasard</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="reset">reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning"> Fb!</button>
+            <button class="btn btn-success"> Google!</button>
+            
+        </div>
+    </div>
+    <div class= contenant-5>
+        <h2>Challenge 5: Le blackJack</h2>
+        <h3><span id="bj_result">Résultat de Game!</span></h3>
+            <div class="boite-1">
+                <div id="ma_box">
+                    <h2> Ton score = <span id="ton_score">0</span> </h2>
+                </div>
+                <div id="dealer_box">
+                    <h2> Dealer score = <span id="son_score">0</span> </h2>
+                </div>    
+            </div>
+            <div class="boite-2">
+                <div>
+                    <button class="btn-lg btn-primary mr-2" id="bj_pioche">Pioche</button>
+                    <button class="btn-lg btn-warning mr-2" id="bj_croupier">Croupier</button>
+                    <button class="btn-lg btn-danger" id="bj_dealer">Dealer</button>
+                </div>
+            </div>
+            <div class="boite-3">
+                <table>
+                    <tr>
+                        <th>Victoire</th>
+                        <th>Défaite</th>
+                        <th>Egalité</th>
+                    </tr>
+                    <tr>
+                        <th><span id="victoire">0</span></th>
+                        <th><span id="defaite">0</span></th>
+                        <th><span id="egalite">0</span></th>
+                    </tr>
+                </table>
+            </div>
+    </div>
+<script src="challenge.js"></script>
+</body>
+</html>
